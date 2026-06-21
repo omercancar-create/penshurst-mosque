@@ -242,6 +242,16 @@ footer{background:var(--g950);padding:52px 24px 32px}
 @keyframes suUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes linePulse{0%,100%{opacity:.35;transform:scaleY(.6);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
 
+/* â”€â”€ ARABIC TEXT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+.p-ar,.hero-bism,.d-ar,.f-ar{
+  font-family:'Noto Naskh Arabic',serif;
+  unicode-bidi:embed;
+  direction:rtl;
+  line-height:1.6;
+}
+.hero-bism{text-align:center;direction:rtl}
+.d-ar{text-align:center}
+
 /* â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media(max-width:1024px){
   .about-grid,.m-grid,.k-grid{grid-template-columns:1fr;gap:44px}
@@ -250,25 +260,70 @@ footer{background:var(--g950);padding:52px 24px 32px}
   .f-top{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
-  :root{--py:60px}
+  :root{--py:56px}
   .nav-links{display:none}
   .burger{display:flex}
-  .p-grid{grid-template-columns:repeat(2,1fr)}
+  .wrap{padding:0 18px}
+  /* Hero */
+  #hero{min-height:100svh}
+  .hero-c{padding-left:18px;padding-right:18px;padding-bottom:60px}
+  .hero-bism{font-size:1.3rem;margin-bottom:14px}
+  .hero-tag{font-size:1.05rem;margin-bottom:28px}
+  .hero-btns{flex-direction:column;align-items:flex-start}
+  .btn-gold,.btn-ghost{width:100%;justify-content:center}
+  /* Prayer */
+  .p-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .p-card{padding:18px 10px}
+  .jbox{flex-direction:column;align-items:flex-start;padding:20px}
+  .j-left{gap:12px}
+  .j-icon{width:38px;height:38px}
+  .j-times{gap:20px}
+  /* Sections */
   .c-grid{grid-template-columns:1fr}
   .d-methods{grid-template-columns:1fr}
   .m-specs{grid-template-columns:1fr 1fr}
-  .jbox{flex-direction:column;align-items:flex-start}
-  .j-times{gap:22px}
-  .hero-btns{flex-direction:column;width:fit-content}
-  .f-top{grid-template-columns:1fr}
-  .map-wrap{height:300px}
   .a-stats{gap:22px}
+  /* Footer / Contact */
+  .f-top{grid-template-columns:1fr}
+  .map-wrap{height:280px}
 }
 @media(max-width:480px){
-  .p-grid{grid-template-columns:1fr 1fr}
-  .p-time{font-size:1.55rem}
-  .m-specs{grid-template-columns:1fr}
+  :root{--py:44px}
+  .wrap{padding:0 14px}
+  /* Nav */
+  .logo-sub{display:none}
+  /* Hero */
+  .hero-bism{font-size:1.1rem}
+  .hero-org{font-size:.68rem;letter-spacing:.1em}
+  .hero-tag{font-size:.97rem}
+  .scroll-hint{display:none}
+  /* Prayer */
+  .p-grid{grid-template-columns:1fr 1fr;gap:8px}
+  .p-card{padding:14px 8px;border-radius:var(--r8)}
+  .p-ar{font-size:1.1rem}
+  .p-en{font-size:.64rem;margin-bottom:8px}
+  .p-time{font-size:1.35rem}
+  .p-badge{font-size:.52rem;padding:2px 7px}
+  .j-title{font-size:1.1rem}
+  .j-t-val{font-size:1.2rem}
+  /* Donate */
+  .d-ar{font-size:1.1rem}
   .d-prog-hdr{flex-direction:column;align-items:flex-start;gap:4px}
+  .d-actions{flex-direction:column}
+  .d-actions a{width:100%;justify-content:center}
+  /* Mosque */
+  .m-specs{grid-template-columns:1fr}
+  /* About */
+  .stat .n{font-size:2.1rem}
+  /* Contact */
+  .map-wrap{height:240px}
+  /* Footer */
+  .f-copy{font-size:.65rem}
+}
+@media(max-width:360px){
+  .p-grid{grid-template-columns:1fr 1fr}
+  .p-time{font-size:1.1rem}
+  .p-ar{font-size:.95rem}
 }
 @media(prefers-reduced-motion:reduce){
   .rev{opacity:1;transform:none}
@@ -325,7 +380,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
   <div class="hero-ov"></div>
   <div class="hero-geo" aria-hidden="true"></div>
   <div class="hero-c">
-    <span class="hero-bism" aria-label="Bismillah ir-Rahman ir-Rahim â€” In the name of Allah, the Most Gracious, the Most Merciful">Ø¨ÙØ³Ù’Ù…Ù Ø§Ù„Ù„ÙŽÙ‘Ù‡Ù Ø§Ù„Ø±ÙŽÙ‘Ø­Ù’Ù…ÙŽÙ†Ù Ø§Ù„Ø±ÙŽÙ‘Ø­ÙÙŠÙ…Ù</span>
+    <span class="hero-bism" lang="ar" aria-label="Bismillah ir-Rahman ir-Rahim â€” In the name of Allah, the Most Gracious, the Most Merciful">Ø¨ÙØ³Ù’Ù…Ù Ø§Ù„Ù„ÙŽÙ‘Ù‡Ù Ø§Ù„Ø±ÙŽÙ‘Ø­Ù’Ù…ÙŽÙ†Ù Ø§Ù„Ø±ÙŽÙ‘Ø­ÙÙŠÙ…Ù</span>
     <h1 class="hero-h">Penshurst<br><em>Mosque</em></h1>
     <span class="hero-org">AISBH â€” Australian Islamic Society of Bosnia &amp; Herzegovina</span>
     <p class="hero-tag">A place of worship, learning and community for all â€” serving Penshurst for over 35 years.</p>
@@ -359,31 +414,31 @@ footer{background:var(--g950);padding:52px 24px 32px}
     <div class="p-grid rev d1" role="list" aria-label="Daily prayer times">
       <div class="p-card" id="pc-0" role="listitem">
         <span class="p-badge" id="pb-0">&nbsp;</span>
-        <span class="p-ar" aria-hidden="true">Ø§Ù„ÙØ¬Ø±</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„ÙØ¬Ø±</span>
         <div class="p-en">Fajr</div>
         <div class="p-time">5:31 <span style="font-size:1rem;opacity:.6">AM</span></div>
       </div>
       <div class="p-card" id="pc-1" role="listitem">
         <span class="p-badge" id="pb-1">&nbsp;</span>
-        <span class="p-ar" aria-hidden="true">Ø§Ù„Ø¸Ù‡Ø±</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„Ø¸Ù‡Ø±</span>
         <div class="p-en">Dhuhr</div>
         <div class="p-time">11:58 <span style="font-size:1rem;opacity:.6">AM</span></div>
       </div>
       <div class="p-card" id="pc-2" role="listitem">
         <span class="p-badge" id="pb-2">&nbsp;</span>
-        <span class="p-ar" aria-hidden="true">Ø§Ù„Ø¹ØµØ±</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„Ø¹ØµØ±</span>
         <div class="p-en">Asr</div>
         <div class="p-time">2:36 <span style="font-size:1rem;opacity:.6">PM</span></div>
       </div>
       <div class="p-card" id="pc-3" role="listitem">
         <span class="p-badge" id="pb-3">&nbsp;</span>
-        <span class="p-ar" aria-hidden="true">Ø§Ù„Ù…ØºØ±Ø¨</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„Ù…ØºØ±Ø¨</span>
         <div class="p-en">Maghrib</div>
         <div class="p-time">4:58 <span style="font-size:1rem;opacity:.6">PM</span></div>
       </div>
       <div class="p-card" id="pc-4" role="listitem">
         <span class="p-badge" id="pb-4">&nbsp;</span>
-        <span class="p-ar" aria-hidden="true">Ø§Ù„Ø¹Ø´Ø§Ø¡</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„Ø¹Ø´Ø§Ø¡</span>
         <div class="p-en">Isha</div>
         <div class="p-time">6:19 <span style="font-size:1rem;opacity:.6">PM</span></div>
       </div>
@@ -633,7 +688,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
   <div class="wrap">
     <div class="d-inner">
       <div class="rev">
-        <span class="d-ar" aria-label="Quranic verse: Indeed, Allah will not change the condition of a people until they change what is in themselves">Ø¥ÙÙ†ÙŽÙ‘ Ø§Ù„Ù„ÙŽÙ‘Ù‡ÙŽ Ù„ÙŽØ§ ÙŠÙØºÙŽÙŠÙÙ‘Ø±Ù Ù…ÙŽØ§ Ø¨ÙÙ‚ÙŽÙˆÙ’Ù…Ù Ø­ÙŽØªÙŽÙ‘Ù‰Ù° ÙŠÙØºÙŽÙŠÙÙ‘Ø±ÙÙˆØ§ Ù…ÙŽØ§ Ø¨ÙØ£ÙŽÙ†ÙÙØ³ÙÙ‡ÙÙ…Ù’</span>
+        <span class="d-ar" lang="ar" aria-label="Quranic verse: Indeed, Allah will not change the condition of a people until they change what is in themselves">Ø¥ÙÙ†ÙŽÙ‘ Ø§Ù„Ù„ÙŽÙ‘Ù‡ÙŽ Ù„ÙŽØ§ ÙŠÙØºÙŽÙŠÙÙ‘Ø±Ù Ù…ÙŽØ§ Ø¨ÙÙ‚ÙŽÙˆÙ’Ù…Ù Ø­ÙŽØªÙŽÙ‘Ù‰Ù° ÙŠÙØºÙŽÙŠÙÙ‘Ø±ÙÙˆØ§ Ù…ÙŽØ§ Ø¨ÙØ£ÙŽÙ†ÙÙØ³ÙÙ‡ÙÙ…Ù’</span>
         <p class="d-verse">"Indeed, Allah will not change the condition of a people until they change what is in themselves." â€” Quran 13:11</p>
       </div>
       <h2 id="donate-heading" class="d-title rev d1">Help Us Rebuild<br>Our Mosque</h2>
@@ -805,7 +860,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
     </div>
     <div class="f-bot">
       <p class="f-copy">&copy; 2026 Australian Islamic Society of Bosnia &amp; Herzegovina Inc. (AISBH) Â· Penshurst Mosque Â· ABN available on request</p>
-      <span class="f-ar" aria-hidden="true">Ø¨ÙØ³Ù’Ù…Ù Ø§Ù„Ù„ÙŽÙ‘Ù‡Ù</span>
+      <span class="f-ar" lang="ar" aria-hidden="true">Ø¨ÙØ³Ù’Ù…Ù Ø§Ù„Ù„ÙŽÙ‘Ù‡Ù</span>
     </div>
   </div>
 </footer>
