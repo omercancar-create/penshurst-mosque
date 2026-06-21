@@ -243,14 +243,8 @@ footer{background:var(--g950);padding:52px 24px 32px}
 @keyframes linePulse{0%,100%{opacity:.35;transform:scaleY(.6);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
 
 /* ── ARABIC TEXT ─────────────────────────────────── */
-.p-ar,.hero-bism,.d-ar,.f-ar{
-  font-family:'Noto Naskh Arabic',serif;
-  unicode-bidi:embed;
-  direction:rtl;
-  line-height:1.6;
-}
-.hero-bism{text-align:center;direction:rtl}
-.d-ar{text-align:center}
+.p-ar,.hero-bism,.d-ar,.f-ar{unicode-bidi:embed}
+.p-ar,.f-ar{direction:rtl}
 
 /* ── RESPONSIVE ──────────────────────────────────── */
 @media(max-width:1024px){
