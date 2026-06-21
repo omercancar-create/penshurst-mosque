@@ -1,15 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Penshurst Mosque Â· AISBH Â· 445 Forest Road, Penshurst NSW</title>
-<meta name="description" content="Penshurst Mosque â€” A Bosnian Muslim community mosque serving Sydney's St George area since 1989. Prayer times, community programs, and rebuild campaign.">
+<title>Penshurst Mosque · AISBH · 445 Forest Road, Penshurst NSW</title>
+<meta name="description" content="Penshurst Mosque — A Bosnian Muslim community mosque serving Sydney's St George area since 1989. Prayer times, community programs, and rebuild campaign.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-/* â”€â”€ TOKENS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── TOKENS ─────────────────────────────────────── */
 :root {
   --g950:#040e08; --g900:#0a1f12; --g800:#0e2b1a; --g700:#163d26;
   --g600:#1f5535; --g500:#2d7a50; --g400:#4da875; --g300:#7cc79d;
@@ -36,23 +36,23 @@ a{color:inherit;text-decoration:none}
 button{cursor:pointer;border:none;background:none;font-family:inherit}
 ul{list-style:none}
 
-/* â”€â”€ LAYOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── LAYOUT ──────────────────────────────────────── */
 .wrap{max-width:var(--mw);margin:0 auto;padding:0 24px}
 section{position:relative;overflow:hidden}
 
-/* â”€â”€ TYPOGRAPHY HELPERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── TYPOGRAPHY HELPERS ─────────────────────────── */
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--au500);margin-bottom:14px}
 .eyebrow::before{content:'';width:26px;height:1px;background:var(--au500)}
 .headline{font-family:var(--fd);font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.1;color:var(--g800)}
 .headline.lt{color:var(--cream)}
 .lead{font-size:1.02rem;line-height:1.75;color:var(--t500);max-width:640px}
 
-/* â”€â”€ REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── REVEAL ──────────────────────────────────────── */
 .rev{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 .rev.on{opacity:1;transform:none}
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
 
-/* â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── NAV ─────────────────────────────────────────── */
 #nav{position:fixed;top:0;inset-inline:0;z-index:900;padding:0 24px;transition:background .4s,box-shadow .4s}
 #nav.scrolled{background:rgba(10,31,18,.96);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);box-shadow:0 4px 24px rgba(0,0,0,.35)}
 .nav-inner{max-width:var(--mw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:70px;border-bottom:1px solid rgba(255,255,255,.07)}
@@ -74,7 +74,7 @@ section{position:relative;overflow:hidden}
 #mmenu a:hover{color:var(--au400)}
 .mm-close{position:absolute;top:20px;right:24px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.4rem}
 
-/* â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── HERO ────────────────────────────────────────── */
 #hero{height:100vh;min-height:580px;display:flex;align-items:center}
 .hero-bg{position:absolute;inset:0;background:url('images/mosque-exterior-1.jpg') center/cover no-repeat;transform:scale(1.07);transition:transform 7s ease-out}
 .hero-bg.ready{transform:scale(1)}
@@ -94,7 +94,7 @@ section{position:relative;overflow:hidden}
 .scroll-hint{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:7px;color:rgba(255,255,255,.35);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;opacity:0;animation:suUp 1s var(--ease) 1.6s forwards}
 .scroll-line{width:1px;height:44px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.35));animation:linePulse 2s ease-in-out infinite}
 
-/* â”€â”€ PRAYER TIMES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── PRAYER TIMES ────────────────────────────────── */
 #prayers{background:var(--g800);padding:var(--py) 0}
 .prayer-geo{position:absolute;inset:0;background:url('images/islamic-geometric-pattern.jpg') center/480px;opacity:.04}
 .p-header{text-align:center;margin-bottom:52px}
@@ -124,7 +124,7 @@ section{position:relative;overflow:hidden}
 .j-t-note{font-size:.62rem;color:rgba(255,255,255,.3);margin-top:2px}
 .p-disc{text-align:center;margin-top:22px;font-size:.72rem;color:rgba(255,255,255,.25)}
 
-/* â”€â”€ ABOUT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── ABOUT ───────────────────────────────────────── */
 #about{padding:var(--py) 0;background:var(--cream)}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
 .a-body{font-size:1rem;line-height:1.78;color:var(--t500);margin:18px 0 24px}
@@ -145,7 +145,7 @@ section{position:relative;overflow:hidden}
 .tl-e{font-size:.9rem;color:var(--t500);line-height:1.5}
 .tl-e strong{color:var(--g800);font-weight:600}
 
-/* â”€â”€ OUR MOSQUE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── OUR MOSQUE ──────────────────────────────────── */
 #mosque{padding:var(--py) 0;background:var(--g900)}
 .m-geo{position:absolute;inset:0;background:url('images/islamic-geometric-pattern.jpg') center/420px;opacity:.03}
 .m-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
@@ -165,7 +165,7 @@ section{position:relative;overflow:hidden}
 .m-feat{display:flex;align-items:center;gap:8px;font-size:.82rem;color:rgba(255,255,255,.6)}
 .f-ck{width:18px;height:18px;background:rgba(201,168,76,.18);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--au400)}
 
-/* â”€â”€ COMMUNITY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── COMMUNITY ───────────────────────────────────── */
 #community{padding:var(--py) 0;background:var(--cream)}
 .c-hdr{text-align:center;margin-bottom:52px}
 .c-hdr .lead{margin:14px auto 0;text-align:center}
@@ -182,7 +182,7 @@ section{position:relative;overflow:hidden}
 .c-text{font-size:.87rem;color:var(--t500);line-height:1.65}
 .c-meta{display:flex;align-items:center;gap:6px;margin-top:18px;font-size:.73rem;font-weight:600;color:var(--g500);letter-spacing:.04em}
 
-/* â”€â”€ DONATE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── DONATE ──────────────────────────────────────── */
 #donate{padding:var(--py) 0;background:var(--g800)}
 .d-geo{position:absolute;inset:0;background:url('images/islamic-geometric-pattern.jpg') center/440px;opacity:.04}
 .d-inner{max-width:780px;margin:0 auto;text-align:center;position:relative}
@@ -203,7 +203,7 @@ section{position:relative;overflow:hidden}
 .d-m-v{font-family:'Courier New',monospace;font-size:.82rem;color:rgba(255,255,255,.65);line-height:1.85}
 .d-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
-/* â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── CONTACT ─────────────────────────────────────── */
 #contact{padding:var(--py) 0;background:var(--white)}
 .k-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
 .k-body{font-size:.97rem;line-height:1.75;color:var(--t500);margin:18px 0 36px;max-width:480px}
@@ -220,7 +220,7 @@ section{position:relative;overflow:hidden}
 .map-wrap{border-radius:var(--r24);overflow:hidden;box-shadow:var(--sh-lg);height:430px;background:#e5e0d5}
 .map-wrap iframe{width:100%;height:100%;border:0}
 
-/* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── FOOTER ──────────────────────────────────────── */
 footer{background:var(--g950);padding:52px 24px 32px}
 .f-inner{max-width:var(--mw);margin:0 auto}
 .f-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:32px}
@@ -233,16 +233,16 @@ footer{background:var(--g950);padding:52px 24px 32px}
 .f-copy{font-size:.72rem;color:rgba(255,255,255,.22)}
 .f-ar{font-family:var(--fa);font-size:.95rem;color:rgba(201,168,76,.35)}
 
-/* â”€â”€ ORNAMENT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── ORNAMENT ────────────────────────────────────── */
 .ornament{display:flex;align-items:center;gap:14px;margin:44px 0}
 .ornament::before,.ornament::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,.45),transparent)}
 .orn-sym{color:var(--au500);font-size:1rem;line-height:1;flex-shrink:0}
 
-/* â”€â”€ ANIMATIONS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── ANIMATIONS ──────────────────────────────────── */
 @keyframes suUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes linePulse{0%,100%{opacity:.35;transform:scaleY(.6);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
 
-/* â”€â”€ ARABIC TEXT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── ARABIC TEXT ─────────────────────────────────── */
 .p-ar,.hero-bism,.d-ar,.f-ar{
   font-family:'Noto Naskh Arabic',serif;
   unicode-bidi:embed;
@@ -252,7 +252,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
 .hero-bism{text-align:center;direction:rtl}
 .d-ar{text-align:center}
 
-/* â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── RESPONSIVE ──────────────────────────────────── */
 @media(max-width:1024px){
   .about-grid,.m-grid,.k-grid{grid-template-columns:1fr;gap:44px}
   .m-grid .m-img{order:0}.m-grid .m-info{order:1}
@@ -357,7 +357,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
       </svg>
       <div class="logo-text">
         <span class="logo-name">Penshurst Mosque</span>
-        <span class="logo-sub">AISBH Â· Est. 1989</span>
+        <span class="logo-sub">AISBH · Est. 1989</span>
       </div>
     </a>
     <ul class="nav-links" role="list">
@@ -380,10 +380,10 @@ footer{background:var(--g950);padding:52px 24px 32px}
   <div class="hero-ov"></div>
   <div class="hero-geo" aria-hidden="true"></div>
   <div class="hero-c">
-    <span class="hero-bism" lang="ar" aria-label="Bismillah ir-Rahman ir-Rahim â€” In the name of Allah, the Most Gracious, the Most Merciful">Ø¨ÙØ³Ù’Ù…Ù Ø§Ù„Ù„ÙŽÙ‘Ù‡Ù Ø§Ù„Ø±ÙŽÙ‘Ø­Ù’Ù…ÙŽÙ†Ù Ø§Ù„Ø±ÙŽÙ‘Ø­ÙÙŠÙ…Ù</span>
+    <span class="hero-bism" lang="ar" aria-label="Bismillah ir-Rahman ir-Rahim — In the name of Allah, the Most Gracious, the Most Merciful">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</span>
     <h1 class="hero-h">Penshurst<br><em>Mosque</em></h1>
-    <span class="hero-org">AISBH â€” Australian Islamic Society of Bosnia &amp; Herzegovina</span>
-    <p class="hero-tag">A place of worship, learning and community for all â€” serving Penshurst for over 35 years.</p>
+    <span class="hero-org">AISBH — Australian Islamic Society of Bosnia &amp; Herzegovina</span>
+    <p class="hero-tag">A place of worship, learning and community for all — serving Penshurst for over 35 years.</p>
     <div class="hero-btns">
       <a href="#prayers" class="btn-gold">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
@@ -408,37 +408,37 @@ footer{background:var(--g950);padding:52px 24px 32px}
     <div class="p-header rev">
       <span class="eyebrow" style="justify-content:center">Five Daily Prayers</span>
       <h2 id="prayers-heading" class="headline lt">Prayer Times</h2>
-      <p style="color:rgba(255,255,255,.5);font-size:.88rem;margin-top:10px">445 Forest Road, Penshurst NSW 2222 Â· Times shown are approximate for current season</p>
+      <p style="color:rgba(255,255,255,.5);font-size:.88rem;margin-top:10px">445 Forest Road, Penshurst NSW 2222 · Times shown are approximate for current season</p>
     </div>
 
     <div class="p-grid rev d1" role="list" aria-label="Daily prayer times">
       <div class="p-card" id="pc-0" role="listitem">
         <span class="p-badge" id="pb-0">&nbsp;</span>
-        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„ÙØ¬Ø±</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">الفجر</span>
         <div class="p-en">Fajr</div>
         <div class="p-time">5:31 <span style="font-size:1rem;opacity:.6">AM</span></div>
       </div>
       <div class="p-card" id="pc-1" role="listitem">
         <span class="p-badge" id="pb-1">&nbsp;</span>
-        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„Ø¸Ù‡Ø±</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">الظهر</span>
         <div class="p-en">Dhuhr</div>
         <div class="p-time">11:58 <span style="font-size:1rem;opacity:.6">AM</span></div>
       </div>
       <div class="p-card" id="pc-2" role="listitem">
         <span class="p-badge" id="pb-2">&nbsp;</span>
-        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„Ø¹ØµØ±</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">العصر</span>
         <div class="p-en">Asr</div>
         <div class="p-time">2:36 <span style="font-size:1rem;opacity:.6">PM</span></div>
       </div>
       <div class="p-card" id="pc-3" role="listitem">
         <span class="p-badge" id="pb-3">&nbsp;</span>
-        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„Ù…ØºØ±Ø¨</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">المغرب</span>
         <div class="p-en">Maghrib</div>
         <div class="p-time">4:58 <span style="font-size:1rem;opacity:.6">PM</span></div>
       </div>
       <div class="p-card" id="pc-4" role="listitem">
         <span class="p-badge" id="pb-4">&nbsp;</span>
-        <span class="p-ar" lang="ar" aria-hidden="true">Ø§Ù„Ø¹Ø´Ø§Ø¡</span>
+        <span class="p-ar" lang="ar" aria-hidden="true">العشاء</span>
         <div class="p-en">Isha</div>
         <div class="p-time">6:19 <span style="font-size:1rem;opacity:.6">PM</span></div>
       </div>
@@ -450,8 +450,8 @@ footer{background:var(--g950);padding:52px 24px 32px}
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
         <div>
-          <div class="j-title">Jumu'ah â€” Friday Prayer</div>
-          <div class="j-sub">Sermon in Arabic, English &amp; Bosnian Â· Two congregations offered</div>
+          <div class="j-title">Jumu'ah — Friday Prayer</div>
+          <div class="j-sub">Sermon in Arabic, English &amp; Bosnian · Two congregations offered</div>
         </div>
       </div>
       <div class="j-times">
@@ -468,7 +468,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
       </div>
     </div>
 
-    <p class="p-disc rev d3">Prayer times vary with the seasons Â· Check with the mosque for Ramadan, Eid, and Taraweeh schedules</p>
+    <p class="p-disc rev d3">Prayer times vary with the seasons · Check with the mosque for Ramadan, Eid, and Taraweeh schedules</p>
   </div>
 </section>
 
@@ -478,14 +478,14 @@ footer{background:var(--g950);padding:52px 24px 32px}
     <div class="about-grid">
       <div class="a-text">
         <div class="rev">
-          <span class="eyebrow">Est. 1989 Â· Penshurst, Sydney</span>
+          <span class="eyebrow">Est. 1989 · Penshurst, Sydney</span>
           <h2 id="about-heading" class="headline">Our Story &amp;<br>Heritage</h2>
         </div>
-        <p class="a-body rev d1">Penshurst Mosque is home to the Australian Islamic Society of Bosnia and Herzegovina â€” one of three Bosnian mosques in Sydney. Rooted in the experiences of Bosnian immigrants who arrived in Australia in the late 1970s, our community has built a place of worship that is as much a cultural anchor as it is a spiritual one.</p>
-        <p class="a-body rev d2" style="margin-top:0">We serve worshippers in three languages â€” Arabic, English, and Bosnian â€” and welcome all Australians through our doors. Over 35 years of peaceful coexistence in the St George region reflects the values we hold dear: faith, family, and belonging.</p>
+        <p class="a-body rev d1">Penshurst Mosque is home to the Australian Islamic Society of Bosnia and Herzegovina — one of three Bosnian mosques in Sydney. Rooted in the experiences of Bosnian immigrants who arrived in Australia in the late 1970s, our community has built a place of worship that is as much a cultural anchor as it is a spiritual one.</p>
+        <p class="a-body rev d2" style="margin-top:0">We serve worshippers in three languages — Arabic, English, and Bosnian — and welcome all Australians through our doors. Over 35 years of peaceful coexistence in the St George region reflects the values we hold dear: faith, family, and belonging.</p>
         <div class="a-quote rev d3">
           <p class="a-qt">"We are open to dialogue. We have been good neighbours for over 30 years."</p>
-          <p class="a-qs">â€” Imam Ensar Cutahija, Penshurst Mosque</p>
+          <p class="a-qs">— Imam Ensar Cutahija, Penshurst Mosque</p>
         </div>
         <div class="a-stats rev d4">
           <div class="stat"><div class="n">35<em>+</em></div><div class="l">Years Serving<br>Penshurst</div></div>
@@ -505,12 +505,12 @@ footer{background:var(--g950);padding:52px 24px 32px}
           <div class="tl-item" role="listitem">
             <div class="tl-dot"></div>
             <div class="tl-y">1986</div>
-            <div class="tl-e"><strong>Property acquired</strong> at 445â€“447 Forest Road, Penshurst NSW 2222</div>
+            <div class="tl-e"><strong>Property acquired</strong> at 445–447 Forest Road, Penshurst NSW 2222</div>
           </div>
           <div class="tl-item" role="listitem">
             <div class="tl-dot"></div>
             <div class="tl-y">1989</div>
-            <div class="tl-e"><strong>Mosque officially opened</strong> â€” beginning of 35+ years of community service</div>
+            <div class="tl-e"><strong>Mosque officially opened</strong> — beginning of 35+ years of community service</div>
           </div>
           <div class="tl-item" role="listitem">
             <div class="tl-dot"></div>
@@ -524,8 +524,8 @@ footer{background:var(--g950);padding:52px 24px 32px}
           </div>
           <div class="tl-item" role="listitem">
             <div class="tl-dot"></div>
-            <div class="tl-y">2018 â€“ 2025</div>
-            <div class="tl-e">Georges River Council approves expansion. <strong>Construction certificate issued early 2025</strong> â€” rebuild commences</div>
+            <div class="tl-y">2018 – 2025</div>
+            <div class="tl-e">Georges River Council approves expansion. <strong>Construction certificate issued early 2025</strong> — rebuild commences</div>
           </div>
         </div>
       </div>
@@ -541,15 +541,15 @@ footer{background:var(--g950);padding:52px 24px 32px}
       <div class="m-img rev">
         <img src="images/mosque-interior-arches.jpg" alt="Mosque interior showing Islamic arches and geometric patterns" loading="lazy">
         <div class="m-img-ov">
-          <span class="m-img-cap">Place of worship Â· Penshurst, Sydney</span>
+          <span class="m-img-cap">Place of worship · Penshurst, Sydney</span>
         </div>
       </div>
       <div class="m-info">
         <div class="rev">
-          <span class="eyebrow" style="color:var(--au500)">445â€“447 Forest Road</span>
+          <span class="eyebrow" style="color:var(--au500)">445–447 Forest Road</span>
           <h2 id="mosque-heading" class="headline lt">Our Mosque &amp;<br>The Rebuild</h2>
         </div>
-        <p class="m-body rev d1">The current building has welcomed worshippers for over three decades. Now, with council approval secured and a construction certificate issued in early 2025, we are preparing to transform the mosque with a new minaret and domed roof â€” honouring our heritage while building for the next generation.</p>
+        <p class="m-body rev d1">The current building has welcomed worshippers for over three decades. Now, with council approval secured and a construction certificate issued in early 2025, we are preparing to transform the mosque with a new minaret and domed roof — honouring our heritage while building for the next generation.</p>
         <div class="m-specs rev d2" role="list" aria-label="Mosque specifications">
           <div class="spec" role="listitem"><div class="spec-l">Capacity</div><div class="spec-v">500 worshippers</div></div>
           <div class="spec" role="listitem"><div class="spec-l">Location</div><div class="spec-v">Penshurst NSW</div></div>
@@ -557,8 +557,8 @@ footer{background:var(--g950);padding:52px 24px 32px}
           <div class="spec" role="listitem"><div class="spec-l">New Domes</div><div class="spec-v">Three domes</div></div>
         </div>
         <div class="m-callout rev d3">
-          <h4>Approved Expansion â€” DA2015/0011</h4>
-          <p>The approved development includes major additions funded entirely by community donations, estimated at $1.5â€“2 million AUD.</p>
+          <h4>Approved Expansion — DA2015/0011</h4>
+          <p>The approved development includes major additions funded entirely by community donations, estimated at $1.5–2 million AUD.</p>
           <div class="m-feats" role="list" aria-label="Development features">
             <div class="m-feat" role="listitem">
               <span class="f-ck" aria-hidden="true">
@@ -605,7 +605,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
       <!-- Open Mosque Day -->
       <article class="c-card rev d1">
         <div class="c-img">
-          <img src="images/mosque-exterior-2.jpg" alt="Open Mosque Day â€” doors open to all Australians" loading="lazy">
+          <img src="images/mosque-exterior-2.jpg" alt="Open Mosque Day — doors open to all Australians" loading="lazy">
           <span class="c-badge">Annual Event</span>
         </div>
         <div class="c-body">
@@ -616,7 +616,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
           <p class="c-text">Every year we open our doors to all Australians for a day of interfaith dialogue, cultural exchange, and warm Bosnian hospitality. Come meet the congregation, ask questions, and experience our community firsthand.</p>
           <div class="c-meta">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            Held annually â€” all welcome
+            Held annually — all welcome
           </div>
         </div>
       </article>
@@ -632,10 +632,10 @@ footer{background:var(--g950);padding:52px 24px 32px}
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <h3 class="c-title">Sunday Community Barbecue</h3>
-          <p class="c-text">On the last Sunday of each month, the Bosnian Women's Association hosts a community barbecue â€” Bosnian cevapi, roast lamb, and homemade desserts, with proceeds supporting those in need. Neighbours and strangers alike are welcome.</p>
+          <p class="c-text">On the last Sunday of each month, the Bosnian Women's Association hosts a community barbecue — Bosnian cevapi, roast lamb, and homemade desserts, with proceeds supporting those in need. Neighbours and strangers alike are welcome.</p>
           <div class="c-meta">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
-            Last Sunday each month Â· All welcome
+            Last Sunday each month · All welcome
           </div>
         </div>
       </article>
@@ -651,7 +651,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </div>
           <h3 class="c-title">Bosnian Youth Network</h3>
-          <p class="c-text">Our young community takes action. In 2019, the Bosnian Youth Network raised over $4,000 and distributed 200 sanitary packs to Sydney's homeless at Martin Place â€” their inaugural project, triple the original fundraising target.</p>
+          <p class="c-text">Our young community takes action. In 2019, the Bosnian Youth Network raised over $4,000 and distributed 200 sanitary packs to Sydney's homeless at Martin Place — their inaugural project, triple the original fundraising target.</p>
           <div class="c-meta">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
             Based at Penshurst &amp; Smithfield
@@ -662,7 +662,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
       <!-- Ethnic School -->
       <article class="c-card rev d4">
         <div class="c-img" style="background:var(--g600)">
-          <img src="images/mosque-exterior-3.jpg" alt="Bosnian Ethnic School â€” language and culture classes" loading="lazy">
+          <img src="images/mosque-exterior-3.jpg" alt="Bosnian Ethnic School — language and culture classes" loading="lazy">
           <span class="c-badge">Every Sunday</span>
         </div>
         <div class="c-body">
@@ -670,10 +670,10 @@ footer{background:var(--g950);padding:52px 24px 32px}
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           </div>
           <h3 class="c-title">Bosnian Ethnic School</h3>
-          <p class="c-text">Located in the Musafirhana building at 447 Forest Road, Bosnian language classes run every Sunday from 1PM to 3PM during school term â€” keeping culture and language alive for the next generation, supported by the AISBH.</p>
+          <p class="c-text">Located in the Musafirhana building at 447 Forest Road, Bosnian language classes run every Sunday from 1PM to 3PM during school term — keeping culture and language alive for the next generation, supported by the AISBH.</p>
           <div class="c-meta">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="16" y1="2" x2="16" y2="6"/></svg>
-            Sundays 1â€“3 PM Â· During school term
+            Sundays 1–3 PM · During school term
           </div>
         </div>
       </article>
@@ -688,21 +688,21 @@ footer{background:var(--g950);padding:52px 24px 32px}
   <div class="wrap">
     <div class="d-inner">
       <div class="rev">
-        <span class="d-ar" lang="ar" aria-label="Quranic verse: Indeed, Allah will not change the condition of a people until they change what is in themselves">Ø¥ÙÙ†ÙŽÙ‘ Ø§Ù„Ù„ÙŽÙ‘Ù‡ÙŽ Ù„ÙŽØ§ ÙŠÙØºÙŽÙŠÙÙ‘Ø±Ù Ù…ÙŽØ§ Ø¨ÙÙ‚ÙŽÙˆÙ’Ù…Ù Ø­ÙŽØªÙŽÙ‘Ù‰Ù° ÙŠÙØºÙŽÙŠÙÙ‘Ø±ÙÙˆØ§ Ù…ÙŽØ§ Ø¨ÙØ£ÙŽÙ†ÙÙØ³ÙÙ‡ÙÙ…Ù’</span>
-        <p class="d-verse">"Indeed, Allah will not change the condition of a people until they change what is in themselves." â€” Quran 13:11</p>
+        <span class="d-ar" lang="ar" aria-label="Quranic verse: Indeed, Allah will not change the condition of a people until they change what is in themselves">إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ</span>
+        <p class="d-verse">"Indeed, Allah will not change the condition of a people until they change what is in themselves." — Quran 13:11</p>
       </div>
       <h2 id="donate-heading" class="d-title rev d1">Help Us Rebuild<br>Our Mosque</h2>
-      <p class="d-body rev d2">The approved expansion â€” a new 16-metre minaret, three domes, and improved facilities â€” requires $1.5 to $2 million in community funding. Every contribution, large or small, brings us closer to completing a home for generations to come. <em style="color:rgba(255,255,255,.5)">"It doesn't matter how much you can contribute as long as you can help."</em> â€” Imam Ensar Cutahija</p>
+      <p class="d-body rev d2">The approved expansion — a new 16-metre minaret, three domes, and improved facilities — requires $1.5 to $2 million in community funding. Every contribution, large or small, brings us closer to completing a home for generations to come. <em style="color:rgba(255,255,255,.5)">"It doesn't matter how much you can contribute as long as you can help."</em> — Imam Ensar Cutahija</p>
 
       <div class="d-prog rev d3" role="region" aria-label="Fundraising progress">
         <div class="d-prog-hdr">
           <span class="d-prog-l">Campaign Progress</span>
-          <span class="d-prog-a">Target: $1.5â€“2M AUD</span>
+          <span class="d-prog-a">Target: $1.5–2M AUD</span>
         </div>
         <div class="prog-track" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="Fundraising at approximately 35%">
           <div class="prog-fill" id="progFill"></div>
         </div>
-        <p class="d-goal">Community donations Â· No government funding Â· 100% volunteer run</p>
+        <p class="d-goal">Community donations · No government funding · 100% volunteer run</p>
       </div>
 
       <div class="d-methods rev d4" role="list" aria-label="Donation methods">
@@ -758,7 +758,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
             </div>
             <div>
               <div class="k-il">Address</div>
-              <div class="k-iv">445â€“447 Forest Road<br>Penshurst NSW 2222, Australia</div>
+              <div class="k-iv">445–447 Forest Road<br>Penshurst NSW 2222, Australia</div>
             </div>
           </div>
           <div class="k-item" role="listitem">
@@ -788,7 +788,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
             </div>
             <div>
               <div class="k-il">Open</div>
-              <div class="k-iv">All five daily prayers Â· Jumu'ah every Friday<br>Sunday school: 1â€“3 PM during term</div>
+              <div class="k-iv">All five daily prayers · Jumu'ah every Friday<br>Sunday school: 1–3 PM during term</div>
             </div>
           </div>
         </div>
@@ -809,7 +809,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
       <div class="map-wrap rev d2">
         <iframe
           src="https://maps.google.com/maps?q=445+Forest+Road+Penshurst+NSW+2222&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          title="Penshurst Mosque location â€” 445 Forest Road, Penshurst NSW 2222"
+          title="Penshurst Mosque location — 445 Forest Road, Penshurst NSW 2222"
           allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -831,10 +831,10 @@ footer{background:var(--g950);padding:52px 24px 32px}
           </svg>
           <div class="logo-text">
             <span class="logo-name">Penshurst Mosque</span>
-            <span class="logo-sub">AISBH Â· Penshurst NSW</span>
+            <span class="logo-sub">AISBH · Penshurst NSW</span>
           </div>
         </div>
-        <p>Serving the Muslim community of the St George area since 1989. A place of worship, learning, and belonging â€” open to all.</p>
+        <p>Serving the Muslim community of the St George area since 1989. A place of worship, learning, and belonging — open to all.</p>
       </div>
       <div>
         <div class="f-col-h">Quick Links</div>
@@ -850,7 +850,7 @@ footer{background:var(--g950);padding:52px 24px 32px}
       <div>
         <div class="f-col-h">Contact</div>
         <ul class="f-links" role="list">
-          <li><a href="https://maps.google.com/?q=445+Forest+Road+Penshurst+NSW+2222" target="_blank" rel="noopener">445â€“447 Forest Road<br>Penshurst NSW 2222</a></li>
+          <li><a href="https://maps.google.com/?q=445+Forest+Road+Penshurst+NSW+2222" target="_blank" rel="noopener">445–447 Forest Road<br>Penshurst NSW 2222</a></li>
           <li><a href="tel:+61295803390">(02) 9580-3390</a></li>
           <li><a href="mailto:penshurstmosque@gmail.com">penshurstmosque@gmail.com</a></li>
           <li><a href="https://www.facebook.com/PenshurstMosque/" target="_blank" rel="noopener">Facebook</a></li>
@@ -859,8 +859,8 @@ footer{background:var(--g950);padding:52px 24px 32px}
       </div>
     </div>
     <div class="f-bot">
-      <p class="f-copy">&copy; 2026 Australian Islamic Society of Bosnia &amp; Herzegovina Inc. (AISBH) Â· Penshurst Mosque Â· ABN available on request</p>
-      <span class="f-ar" lang="ar" aria-hidden="true">Ø¨ÙØ³Ù’Ù…Ù Ø§Ù„Ù„ÙŽÙ‘Ù‡Ù</span>
+      <p class="f-copy">&copy; 2026 Australian Islamic Society of Bosnia &amp; Herzegovina Inc. (AISBH) · Penshurst Mosque · ABN available on request</p>
+      <span class="f-ar" lang="ar" aria-hidden="true">بِسْمِ اللَّهِ</span>
     </div>
   </div>
 </footer>
@@ -868,13 +868,13 @@ footer{background:var(--g950);padding:52px 24px 32px}
 <script>
 'use strict';
 
-/* â”€â”€ NAV SCROLL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── NAV SCROLL ────────────────────────────────── */
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
 
-/* â”€â”€ HERO BG PARALLAX / LOAD â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── HERO BG PARALLAX / LOAD ────────────────────── */
 const heroBg = document.getElementById('heroBg');
 requestAnimationFrame(() => heroBg.classList.add('ready'));
 window.addEventListener('scroll', () => {
@@ -884,7 +884,7 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-/* â”€â”€ MOBILE MENU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── MOBILE MENU ────────────────────────────────── */
 const burger = document.getElementById('burger');
 const mmenu  = document.getElementById('mmenu');
 const mmClose = document.getElementById('mmClose');
@@ -904,7 +904,7 @@ function closeMenu() {
 mmClose.addEventListener('click', closeMenu);
 mmenu.addEventListener('click', e => { if (e.target === mmenu) closeMenu(); });
 
-/* â”€â”€ INTERSECTION OBSERVER (REVEAL) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── INTERSECTION OBSERVER (REVEAL) ─────────────── */
 const revEls = document.querySelectorAll('.rev');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -914,7 +914,7 @@ const observer = new IntersectionObserver(entries => {
 
 revEls.forEach(el => observer.observe(el));
 
-/* â”€â”€ PRAYER TIMES HIGHLIGHT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── PRAYER TIMES HIGHLIGHT ─────────────────────── */
 (function highlightPrayer() {
   // Approximate Penshurst times in minutes-from-midnight (June / winter)
   const times = [5*60+31, 11*60+58, 14*60+36, 16*60+58, 18*60+19];
@@ -941,7 +941,7 @@ revEls.forEach(el => observer.observe(el));
   if (nextBadge)   nextBadge.textContent  = 'Next';
 })();
 
-/* â”€â”€ PROGRESS BAR ANIMATE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── PROGRESS BAR ANIMATE ───────────────────────── */
 const progFill = document.getElementById('progFill');
 const progObserver = new IntersectionObserver(entries => {
   if (entries[0].isIntersecting) {
@@ -951,11 +951,10 @@ const progObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.5 });
 progObserver.observe(progFill);
 
-/* â”€â”€ KEYBOARD: ESCAPE CLOSES MENU â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── KEYBOARD: ESCAPE CLOSES MENU ───────────────── */
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeMenu();
 });
 </script>
 </body>
 </html>
-
